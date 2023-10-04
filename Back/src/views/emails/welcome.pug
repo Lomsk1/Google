@@ -1,0 +1,17 @@
+extends baseEmail
+
+block content
+    p Hi #{firstName},
+    p Welcome to Our Page, we're glad to have you 🎉🙏
+    p (Website for this action not yet implemented.)
+    table.btn.btn-primary(role='presentation' border='0' cellpadding='0' cellspacing='0')
+        tbody
+            tr
+                td(align='left')
+                    table(role='presentation' border='0' cellpadding='0' cellspacing='0')
+                        tbody
+                            tr
+                                td
+                                    a(href=`${url}`, target='_blank') Update your information
+    p If you need any help, please don't hesitate to contact me!
+    p - SSA
